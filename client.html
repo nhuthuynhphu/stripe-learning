@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stripe Payment</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Stripe Payment</h2>
+      <form id="payment-form">
+        <div id="card-element">
+          <!-- Stripe Element will be inserted here -->
+        </div>
+        <button id="submit">Pay</button>
+        <div id="payment-message" class="hidden"></div>
+      </form>
+    </div>
+
+    <script src="client.js"></script>
+  </body>
+</html>
